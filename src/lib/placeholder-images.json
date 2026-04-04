@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "course-math",
+      "description": "Advanced Mathematics texture",
+      "imageUrl": "https://picsum.photos/seed/math42/600/800",
+      "imageHint": "mathematics calculus"
+    },
+    {
+      "id": "course-physics",
+      "description": "Physics conceptual macro",
+      "imageUrl": "https://picsum.photos/seed/physics88/600/800",
+      "imageHint": "physics light"
+    },
+    {
+      "id": "course-history",
+      "description": "Ancient history textures",
+      "imageUrl": "https://picsum.photos/seed/history12/600/800",
+      "imageHint": "ancient history"
+    },
+    {
+      "id": "student-profile",
+      "description": "Academic portrait",
+      "imageUrl": "https://picsum.photos/seed/student5/400/400",
+      "imageHint": "student portrait"
+    }
+  ]
+}
