@@ -1,0 +1,41 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-appetizer",
+      "description": "Exquisite appetizer platter",
+      "imageUrl": "https://picsum.photos/seed/food1/800/1200",
+      "imageHint": "gourmet appetizer"
+    },
+    {
+      "id": "hero-main",
+      "description": "Signature main course",
+      "imageUrl": "https://picsum.photos/seed/food2/800/1200",
+      "imageHint": "luxury steakhouse"
+    },
+    {
+      "id": "hero-drink",
+      "description": "Fine wine and cocktails",
+      "imageUrl": "https://picsum.photos/seed/food3/800/1200",
+      "imageHint": "fine wine"
+    },
+    {
+      "id": "interior-view",
+      "description": "Luxury dining room",
+      "imageUrl": "https://picsum.photos/seed/interior/1200/800",
+      "imageHint": "luxury restaurant interior"
+    },
+    {
+      "id": "chef-portrait",
+      "description": "Executive Chef portrait",
+      "imageUrl": "https://picsum.photos/seed/chef/600/800",
+      "imageHint": "professional chef"
+    },
+    {
+      "id": "special-dish-1",
+      "description": "Speciality dish presentation",
+      "imageUrl": "https://picsum.photos/seed/special1/600/600",
+      "imageHint": "plated food"
+    }
+  ]
+}
