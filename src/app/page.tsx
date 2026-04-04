@@ -15,7 +15,10 @@ export default function Home() {
       <header className="w-full pt-24 pb-12 bg-background flex flex-col items-center">
         <h1 className="text-5xl md:text-8xl font-headline tracking-[0.3em] text-primary">CASA LUCA</h1>
         <div className="gold-divider max-w-md mt-8" />
-        <p className="text-[10px] font-subtitle tracking-[0.6em] text-primary/60 mt-4 uppercase">Exquisite Culinary Artistry</p>
+       <p className="text-[12px] font-subtitle tracking-[0.2em] text-primary/80 mt-4 uppercase text-center">
+  Reserva tu mesa en segundos por WhatsApp<br />
+  Sin llamadas. Sin esperas.
+</p>
       </header>
 
       {/* Navigation & Guest Services */}
@@ -27,7 +30,17 @@ export default function Home() {
           <span className="cursor-pointer hover:text-primary transition-colors">RESERVATION</span>
           <span className="cursor-pointer hover:text-primary transition-colors">CONTACT</span>
         </div>
-        <button className="border border-primary/40 px-6 py-2 hover:bg-primary hover:text-background transition-all text-[10px] font-subtitle tracking-[0.2em] uppercase">BOOK A TABLE</button>
+       <a
+  href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
+  target="_blank"
+>
+  <button className="border border-primary/40 px-6 py-2 hover:bg-primary hover:text-background transition-all text-[10px] font-subtitle tracking-[0.2em] uppercase">
+    RESERVAR POR WHATSAPP
+  </button>
+         <p className="text-[10px] text-primary/60 mt-2 text-center">
+  ⚡ Respuesta rápida · Cupos limitados
+</p>
+</a>
       </nav>
 
       {/* Hero Categories */}
@@ -62,16 +75,16 @@ export default function Home() {
         <div className="gold-divider max-w-lg mx-auto mb-12" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto px-6 text-sm font-light italic opacity-80 mb-16">
           <div>
-            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">LOCATION</h4>
-            <p>123 Luxury Avenue<br />Fine Dining District, FL</p>
+            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">DIRECCIÓN</h4>
+            <p>Calle Paseo de los Locutores<br />Sector Piantini, SD</p>
           </div>
           <div>
-            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">HOURS</h4>
-            <p>Mon - Sun: 5:00 PM - 11:00 PM<br />Lunch: Sat & Sun Only</p>
+            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">HORARIO</h4>
+            <p>Domingo - Miercoles 12 PM - 12 AM<br />Jueves - Sabado 12 PM - 1 AM </p>
           </div>
           <div>
-            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">RESERVATIONS</h4>
-            <p>+1 (555) LUXURY-DINING<br />concierge@casaluca.com</p>
+            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">RESERVACIONES</h4>
+            <p>+18293424146<br />CasaLuca@gmail.com</p>
           </div>
         </div>
         <p className="text-[10px] font-subtitle tracking-[0.4em] opacity-40 uppercase">© 2025 CASA LUCA FINE DINING GROUP</p>
