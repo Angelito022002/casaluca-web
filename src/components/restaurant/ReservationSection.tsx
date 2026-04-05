@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function ReservationSection() {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="luxury-card bg-primary/5 border border-primary/20 p-12 space-y-8 relative z-10">
           <div className="text-center">
             <span className="text-[10px] font-subtitle tracking-widest text-primary uppercase">RESERVATION</span>
@@ -14,7 +14,7 @@ export function ReservationSection() {
           </div>
           
           <form className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Input placeholder="Full Name" className="bg-transparent border-primary/20 rounded-none h-12 text-xs uppercase tracking-widest" />
               <Input placeholder="Guests" type="number" className="bg-transparent border-primary/20 rounded-none h-12 text-xs uppercase tracking-widest" />
             </div>
