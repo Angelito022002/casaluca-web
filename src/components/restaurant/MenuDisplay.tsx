@@ -34,7 +34,15 @@ export function MenuDisplay() {
           </div>
 
           {MENU_ITEMS.slice(0, 2).map((section, idx) => (
-            <div key={idx} className="space-y-10">
+            <div 
+  key={idx} 
+  id={
+    section.section === "Entradas" ? "appetizers" :
+    section.section === "Platos Fuertes" ? "mains" :
+    section.section === "Bebidas" ? "drinks" : ""
+  }
+  className="space-y-10"
+>
               <h3 className="font-headline text-2xl text-primary/80 border-b border-primary/20 pb-4">{section.section}</h3>
               {section.items.map((item, i) => (
                 <div key={i} className="group cursor-pointer">
