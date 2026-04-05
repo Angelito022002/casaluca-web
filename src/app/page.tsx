@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex gap-12 text-[10px] font-subtitle tracking-[0.3em] uppercase opacity-70">
           <span className="cursor-pointer hover:text-primary transition-colors">HOME</span>
           <span className="cursor-pointer hover:text-primary transition-colors">ABOUT</span>
-       <a href="/menu" className="cursor-pointer hover:text-primary transition-colors">
+     <a href="/menu" className="cursor-pointer hover:text-primary transition-colors">
   MENU
 </a>
           <span className="cursor-pointer hover:text-primary transition-colors">RESERVATION</span>
