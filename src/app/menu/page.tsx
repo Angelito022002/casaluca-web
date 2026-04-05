@@ -137,20 +137,27 @@ export default function MenuPage() {
 
         <div className="space-y-28">
           {MENU_SECTIONS.map((section, index) => (
-            <section key={index} className="border border-[#C5A059]/20 bg-[#0F261E] p-8 md:p-12 rounded-t-[120px]">
-              <h2 className="text-4xl font-serif text-[#C5A059] mb-10 tracking-wide">
+         <section
+  key={index}
+  className="border border-[#C5A059]/20 bg-[#0F261E] p-5 sm:p-6 md:p-12 rounded-t-[60px] sm:rounded-t-[80px] md:rounded-t-[120px]"
+>
+            <h2 className="text-3xl sm:text-4xl font-serif text-[#C5A059] mb-8 md:mb-10 tracking-wide">
   {section.title}
 </h2>
            <div className="space-y-6">
                 {section.items.map((item, i) => (
                   <div key={i}>
-                    <div className="flex items-baseline gap-4">
-                      <h3 className="text-lg text-white whitespace-nowrap hover:text-[#C5A059] transition">
-                        {item.name}
-                      </h3>
-                      <div className="flex-1 border-b border-dashed border-[#C5A059]/30" />
-                      <span className="text-[#C5A059] whitespace-nowrap">{item.price}</span>
-                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+  <h3 className="text-lg text-white leading-snug sm:flex-shrink">
+    {item.name}
+  </h3>
+
+  <div className="hidden sm:block flex-1 border-b border-dashed border-[#C5A059]/30" />
+
+  <span className="text-[#C5A059] whitespace-nowrap sm:self-auto">
+    {item.price}
+  </span>
+</div>
                     {item.desc && (
                       <p className="text-sm text-[#BDBDBD] mt-2 italic">{item.desc}</p>
                     )}
