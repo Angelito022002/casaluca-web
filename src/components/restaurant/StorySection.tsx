@@ -5,10 +5,10 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 export function StorySection() {
   return (
     <section className="py-24 max-w-7xl mx-auto px-6">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+  <div className="grid grid-cols-1 md:grid-cols-2 ...">
         <div className="space-y-8">
           <span className="text-[10px] font-subtitle tracking-[0.5em] text-primary uppercase">OUR STORY</span>
-          <h2 className="text-4xl md:text-6xl font-headline leading-tight">
+         <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline leading-tight text-primary">
             Enjoy Every Moment with<br />
             Luxury Breakfast, Lunch<br />
             & Dinner.
