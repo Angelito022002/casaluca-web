@@ -5,9 +5,9 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const CATEGORIES = [
-  { id: "appetizers", title: "ENTRADAS", img: PlaceHolderImages?.[0]?.imageUrl || "https://picsum.photos/seed/food1/800/1200" }, 
-  { id: "mains", title: "PLATOS FUERTES", img: PlaceHolderImages?.[1]?.imageUrl || "https://picsum.photos/seed/food2/800/1200" }, 
- { id: "drinks", title: "BEBIDAS", img: PlaceHolderImages?.[2]?.imageUrl || "https://picsum.photos/seed/food3/800/1200" },  
+  { id: "appetizers", title: "ENTRADAS", img: "https://i.imgur.com/ZCGGJrj.jpeg" },
+  { id: "mains", title: "PLATOS FUERTES", img: "https://i.imgur.com/xeojJPQ.jpeg" },
+  { id: "desserts", title: "POSTRES", img: "https://i.imgur.com/JzjaYdT.jpeg" },
 ];
 
 export function HeroSections() {
