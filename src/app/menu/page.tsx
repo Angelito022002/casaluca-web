@@ -126,19 +126,26 @@ export default function MenuPage() {
             Volver al inicio
           </Link>
           <h1 className="text-5xl md:text-7xl font-serif text-[#C5A059] mt-6">MENÚ</h1>
+          <div className="mt-10 h-[300px] relative overflow-hidden rounded-t-[120px] border border-[#C5A059]/20">
+  <img 
+    src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee"
+    className="w-full h-full object-cover"
+  />
+</div>
           <p className="text-[#BDBDBD] mt-4">Sabores diseñados para una experiencia única</p>
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-28">
           {MENU_SECTIONS.map((section, index) => (
             <section key={index} className="border border-[#C5A059]/20 bg-[#0F261E] p-8 md:p-12 rounded-t-[120px]">
-              <h2 className="text-3xl md:text-4xl text-[#C5A059] font-serif mb-8">{section.title}</h2>
-
-              <div className="space-y-6">
+              <h2 className="text-4xl font-serif text-[#C5A059] mb-10 tracking-wide">
+  {section.title}
+</h2>
+           <div className="space-y-6">
                 {section.items.map((item, i) => (
                   <div key={i}>
                     <div className="flex items-baseline gap-4">
-                      <h3 className="text-lg md:text-xl font-semibold text-white whitespace-nowrap">
+                      <h3 className="text-lg text-white whitespace-nowrap hover:text-[#C5A059] transition">
                         {item.name}
                       </h3>
                       <div className="flex-1 border-b border-dashed border-[#C5A059]/30" />
@@ -156,7 +163,7 @@ export default function MenuPage() {
 
         <div className="text-center mt-20">
           <a
-            href="https://wa.me/1829TU_NUMERO?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
+            href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
             target="_blank"
             className="inline-block border border-[#C5A059] text-[#C5A059] px-8 py-4 uppercase tracking-[0.2em] hover:bg-[#C5A059] hover:text-[#0B1C16] transition"
           >
