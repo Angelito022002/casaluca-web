@@ -22,8 +22,8 @@ export default function Home() {
       </header>
 
       {/* Navigation & Guest Services */}
-      <nav className="sticky top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-primary/10 px-8 py-6 flex justify-center items-center gap-16">
-        <div className="flex gap-12 text-[10px] font-subtitle tracking-[0.3em] uppercase opacity-70">
+     <nav className="sticky top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-primary/10 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-12 text-[9px] md:text-[10px] font-subtitle tracking-[0.2em] md:tracking-[0.3em] uppercase opacity-70 text-center">
           <span className="cursor-pointer hover:text-primary transition-colors">HOME</span>
           <span className="cursor-pointer hover:text-primary transition-colors">ABOUT</span>
      <a href="/menu" className="cursor-pointer hover:text-primary transition-colors">
@@ -35,11 +35,14 @@ export default function Home() {
        <a
   href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
   target="_blank"
+  rel="noreferrer"
+  className="w-full md:w-auto flex justify-center"
 >
-  <button className="border border-primary/40 px-6 py-2 hover:bg-primary hover:text-background transition-all text-[10px] font-subtitle tracking-[0.2em] uppercase">
+  <button className="w-full md:w-auto max-w-[260px] border border-primary/40 px-4 md:px-6 py-3 md:py-2 hover:bg-primary hover:text-background transition-all text-[10px] font-subtitle tracking-[0.2em] uppercase">
     RESERVAR POR WHATSAPP
   </button>
-         <p className="text-[10px] text-primary/60 mt-2 text-center">
+</a>
+         <p className="text-[10px] text-primary/60 mt-2 text-center max-w-[260px]">
   ⚡ Respuesta rápida · Cupos limitados
 </p>
 </a>
