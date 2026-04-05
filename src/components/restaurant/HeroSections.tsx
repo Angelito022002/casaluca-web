@@ -12,10 +12,10 @@ const CATEGORIES = [
 
 export function HeroSections() {
   return (
-    <section className="h-[90vh] grid grid-cols-1 md:grid-cols-3">
+   <section className="grid grid-cols-1 md:grid-cols-3 auto-rows-[260px] md:auto-rows-auto md:h-[90vh]">
        {CATEGORIES.map((cat) => (
   <a href={`#${cat.id}`} key={cat.id}>
-    <div className="relative group overflow-hidden cursor-pointer h-full">
+    <div className="relative group overflow-hidden cursor-pointer h-[260px] md:h-full">
       <Image 
         src={cat.img} 
         alt={cat.title} 
@@ -23,9 +23,9 @@ export function HeroSections() {
         className="object-cover transition-transform duration-1000 group-hover:scale-110" 
         data-ai-hint="luxury food"
       />
-      <h3 className="absolute bottom-4 left-4 text-white text-xl">
-        {cat.title}
-      </h3>
+      <h3 className="absolute bottom-4 left-4 text-white text-2xl md:text-xl font-headline">
+  {cat.title}
+</h3>
     </div>
   </a>
 ))}
