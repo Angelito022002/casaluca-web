@@ -77,7 +77,7 @@ export default function Home() {
       <GalleryFeed />
 
       {/* Footer */}
-      <footer className="py-24 text-center border-t border-primary/10">
+      <footer className="py-16 md:py-24 text-center border-t border-primary/10 px-4">
         <h2 className="text-4xl font-headline mb-8 tracking-tighter">CASA LUCA</h2>
         <div className="gold-divider max-w-lg mx-auto mb-12" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto px-6 text-sm font-light italic opacity-80 mb-16">
