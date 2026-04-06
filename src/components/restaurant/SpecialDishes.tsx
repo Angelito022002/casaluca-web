@@ -4,16 +4,16 @@
 import Image from "next/image";
 
 const SPECIALS = [
-  { id: 1, name: "Roasted Duck", price: "$52", img: "https://picsum.photos/seed/spec1/600/600" },
-  { id: 2, name: "Truffle Pasta", price: "$38", img: "https://picsum.photos/seed/spec2/600/600" },
-  { id: 3, name: "Pan Seared Scallops", price: "$42", img: "https://picsum.photos/seed/spec3/600/600" },
+  { id: 1, name: "Pulpo Yakitori", price: "RD$1,400", img: "https://picsum.photos/seed/spec1/600/600" },
+  { id: 2, name: "Carpaccio de Pescado Blanco", price: "RD$695", img: "https://picsum.photos/seed/spec2/600/600" },
+  { id: 3, name: "Casa Luca chocolate cake", price: "RD$900", img: "https://picsum.photos/seed/spec3/600/600" },
 ];
 
 export function SpecialDishes() {
   return (
     <section className="py-24 text-center">
       <span className="text-[10px] font-subtitle tracking-[0.5em] text-primary uppercase block mb-6">CHEF'S SELECTION</span>
-      <h2 className="text-4xl md:text-5xl font-headline mb-16">SPECIAL DISHES</h2>
+      <h2 className="text-4xl md:text-5xl font-headline mb-16">PLATOS DESTACADOS</h2>
       
       <div className="flex flex-wrap justify-center gap-12 max-w-7xl mx-auto px-6">
         {SPECIALS.map((dish) => (
