@@ -22,7 +22,7 @@ const MENU_ITEMS = [
   {
     section: "POSTRES",
     items: [
-      { name: "Casa Luca chocolate cake", price: "RD$900" }, },
+      { name: "Casa Luca chocolate cake", price: "RD$900" },
       { name: "Guava bread pudding", price: "RD$575" }
     ]
   }
