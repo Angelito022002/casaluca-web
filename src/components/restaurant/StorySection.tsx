@@ -26,7 +26,7 @@ export function StorySection() {
           <div className="pt-8 flex gap-8 items-center">
             <div className="h-px w-24 bg-primary/40" />
             <span className="text-[10px] font-subtitle tracking-widest uppercase text-primary">
-              Desde 2023
+              EXPERIENCIA · SABOR · DISEÑO
             </span>
           </div>
         </div>
