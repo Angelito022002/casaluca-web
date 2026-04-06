@@ -41,15 +41,16 @@ export function StorySection() {
             />
           </div>
 
-          <div className="absolute -top-12 -left-12 arched-portal w-48 h-64 border-primary/20 hidden md:block">
-            <Image
-              src="https://i.imgur.com/vNhAJ03.jpeg"
-              alt="Ambiente"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+          <div className="block mt-6 flex justify-center">
+  <div className="w-32 h-32 relative">
+    <Image
+      src="https://i.imgur.com/vNhAJ03.jpeg"
+      alt="detalle restaurante"
+      fill
+      className="object-cover rounded-full border border-[#C5A059]/30"
+    />
+  </div>
+</div>
       </div>
     </section>
   );
