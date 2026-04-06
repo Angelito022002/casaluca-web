@@ -178,7 +178,7 @@ export default function MenuPage() {
           </a>
         </div>
       </div>
-      <p className="text-[#BDBDBD] mt-4 text-sm">
+      <p className="text-center mt-4 text-sm">
   Experiencia exclusiva · Reservas limitadas
 </p>
     </main>
