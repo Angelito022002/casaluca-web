@@ -36,7 +36,7 @@ export function StorySection() {
             <Image src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Chef" fill className="object-cover" />
           </div>
           <div className="absolute -bottom-12 -right-12 arched-portal w-48 h-64 border-primary/20 hidden md:block">
-            <Image src="src=src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Wine" fill className="object-cover" />
+            <Image src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Wine" fill className="object-cover" />
           </div>
         </div>
       </div>
