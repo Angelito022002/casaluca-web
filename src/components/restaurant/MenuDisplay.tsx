@@ -6,7 +6,7 @@ const MENU_ITEMS = [
   {
     section: "ENTRADAS",
     items: [
-      { name: "Casa Luca cheese bread", price: "RD$345, desc: "Espinaca, pernod y pan gratinado" },
+      { name: "Casa Luca cheese bread", price: "RD$345", desc: "Espinaca, pernod y pan gratinado" },
       { name: "Croquetas de Fuet", price: "RD$425", desc: "Aceite de trufa, rúcula y parmesano" },
       { name: "CL Shrimp", desc: "Camarones envueltos en masa wonton con queso de cabra y queso robiola", price: "RD$1,250" }
     ]
