@@ -34,7 +34,7 @@ export function StorySection() {
         <div className="relative h-[600px] flex items-center justify-center">
           <div className="arched-portal relative w-full h-[500px] z-10 gold-glow">
             <Image
-              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+              src="https://i.imgur.com/Cx22uWZ.jpeg"
               alt="Interior del restaurante"
               fill
               className="object-cover"
@@ -43,17 +43,8 @@ export function StorySection() {
 
           <div className="absolute -top-12 -left-12 arched-portal w-48 h-64 border-primary/20 hidden md:block">
             <Image
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+              src="https://i.imgur.com/vNhAJ03.jpeg"
               alt="Ambiente"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div className="absolute -bottom-12 -right-12 arched-portal w-48 h-64 border-primary/20 hidden md:block">
-            <Image
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
-              alt="Experiencia gastronómica"
               fill
               className="object-cover"
             />
