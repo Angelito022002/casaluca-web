@@ -67,7 +67,6 @@ export default function Home() {
 
       {/* AI Recommendation Layer */}
       <div className="max-w-7xl mx-auto px-6 mb-24">
-        <MenuRecommendations />
       </div>
 
       {/* Reservation & Booking */}
