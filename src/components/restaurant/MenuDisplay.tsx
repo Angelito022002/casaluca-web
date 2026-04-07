@@ -53,7 +53,7 @@ export function MenuDisplay() {
           <div className="space-y-12">
 
             {/* ENTRADAS */}
-            <div className="space-y-6">
+      <div id="appetizers" className="space-y-6">
               <div className="arched-portal h-[220px] sm:h-[260px] gold-glow relative overflow-hidden mb-6">
                 <Image
                   src="https://i.imgur.com/ZCGGJrj.jpeg"
@@ -91,7 +91,7 @@ export function MenuDisplay() {
             </div>
 
             {/* PLATOS FUERTES */}
-            <div className="space-y-6">
+        <div id="mains" className="space-y-6">
               <div className="arched-portal h-[280px] sm:h-[320px] gold-glow relative overflow-hidden mb-6">
                 <Image
                   src="https://i.imgur.com/xeojJPQ.jpeg"
@@ -134,7 +134,7 @@ export function MenuDisplay() {
           <div className="space-y-10">
 
             {/* POSTRES */}
-            <div className="space-y-6">
+         <div id="desserts" className="space-y-6">
               <div className="arched-portal h-[260px] sm:h-[300px] gold-glow relative overflow-hidden mb-6">
                 <Image
                   src="https://i.imgur.com/JzjaYdT.jpeg"
