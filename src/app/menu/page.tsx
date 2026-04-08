@@ -146,7 +146,7 @@ const featuredSections = [
 
 export default function MenuPage() {
   return (
-    <main className="min-h-screen bg-[#0B1C16] text-white px-4 md:px-6 py-12 md:py-16">
+    <main className="min-h-screen bg-[#0B1C16] text-white px-3 sm:px-4 md:px-6 py-10 md:py-16">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14 md:mb-20">
           <Link
@@ -168,15 +168,21 @@ export default function MenuPage() {
         </div>
 
         {/* BLOQUES EDITORIALES */}
-        <div className="space-y-12 md:space-y-16 mb-20 md:mb-24">
+        <div className="space-y-10 md:space-y-16 mb-20 md:mb-24">
           {featuredSections.map((section, index) => (
             <section
               key={index}
-              className="bg-[#103128] border border-[#C5A059]/15 p-5 md:p-8"
+              className="bg-[#103128] border border-[#C5A059]/15 p-4 sm:p-5 md:p-8"
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div className={`lg:col-span-5 ${section.reversed ? "lg:order-2" : "lg:order-1"}`}>
-                 <div className="relative overflow-hidden rounded-t-[120px] border border-[#C5A059]/20 h-[260px] sm:h-[300px] md:h-[420px] mx-auto max-w-[320px] md:max-w-full">
+              <div className="grid grid-cols-[44%_56%] md:grid-cols-[42%_58%] lg:grid-cols-12 gap-4 sm:gap-5 md:gap-8 items-start">
+                <div
+                  className={`${
+                    section.reversed
+                      ? "lg:col-span-5 lg:order-2"
+                      : "lg:col-span-5 lg:order-1"
+                  }`}
+                >
+                  <div className="relative overflow-hidden rounded-t-[72px] sm:rounded-t-[88px] md:rounded-t-[120px] border border-[#C5A059]/20 h-[180px] xs:h-[200px] sm:h-[240px] md:h-[320px] lg:h-[420px]">
                     <img
                       src={section.image}
                       alt={section.title}
@@ -185,34 +191,42 @@ export default function MenuPage() {
                   </div>
                 </div>
 
-                <div className={`lg:col-span-7 ${section.reversed ? "lg:order-1" : "lg:order-2"}`}>
-                  <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
-                    <div className="hidden md:flex items-center justify-center min-w-[70px]">
-                      <span className="text-[#C5A059] text-5xl lg:text-6xl font-serif [writing-mode:vertical-rl] rotate-180 tracking-wide opacity-90">
+                <div
+                  className={`${
+                    section.reversed
+                      ? "lg:col-span-7 lg:order-1"
+                      : "lg:col-span-7 lg:order-2"
+                  }`}
+                >
+                  <div className="flex items-start gap-3 sm:gap-4 md:gap-8">
+                    <div className="flex items-start justify-center min-w-[28px] sm:min-w-[34px] md:min-w-[70px]">
+                      <span className="text-[#C5A059] text-[30px] sm:text-[38px] md:text-5xl lg:text-6xl font-serif [writing-mode:vertical-rl] rotate-180 tracking-tight md:tracking-wide opacity-90 leading-none">
                         {section.sideTitle}
                       </span>
                     </div>
 
-                    <div className="flex-1">
-                     <h2 className="text-3xl sm:text-4xl md:text-4xl font-serif text-[#E8E0D0] mb-6 md:mb-8 text-center md:text-left">
+                    <div className="flex-1 min-w-0 pt-1">
+                      <h2 className="text-[22px] sm:text-[30px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
                         {section.title}
                       </h2>
 
-                      <div className="space-y-5">
+                      <div className="space-y-3 sm:space-y-4 md:space-y-5">
                         {section.items.map((item, i) => (
                           <div key={i}>
-                            <div className="flex items-baseline gap-3">
-                              <h3 className="text-base md:text-lg font-semibold text-white">
+                            <div className="flex items-baseline gap-2 sm:gap-3">
+                              <h3 className="text-[11px] sm:text-[15px] md:text-lg font-semibold text-white leading-snug min-w-0">
                                 {item.name}
                               </h3>
-                              <div className="flex-1 border-b border-[#C5A059]/30" />
-                              <span className="text-[#C5A059] text-sm md:text-base whitespace-nowrap">
+
+                              <div className="flex-1 border-b border-[#C5A059]/30 min-w-[12px] sm:min-w-[20px]" />
+
+                              <span className="text-[#C5A059] text-[11px] sm:text-[15px] md:text-base whitespace-nowrap">
                                 {item.price}
                               </span>
                             </div>
 
                             {item.desc && (
-                              <p className="text-sm text-[#C9C9C9] mt-2 italic leading-relaxed">
+                              <p className="text-[10px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[95%]">
                                 {item.desc}
                               </p>
                             )}
