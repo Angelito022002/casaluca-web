@@ -77,7 +77,7 @@ export default function Home() {
 
       {/* Social / Gallery */}
       <GalleryFeed />
-
+ {/* Footer */}
     <footer className="py-16 md:py-24 border-t border-primary/10 bg-background">
   <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
 
