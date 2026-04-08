@@ -78,26 +78,67 @@ export default function Home() {
       {/* Social / Gallery */}
       <GalleryFeed />
 
-      {/* Footer */}
-      <footer className="py-16 md:py-24 text-center border-t border-primary/10 px-4">
-        <h2 className="text-4xl font-headline mb-8 tracking-tighter">CASA LUCA</h2>
-        <div className="gold-divider max-w-lg mx-auto mb-12" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto px-6 text-sm font-light italic opacity-80 mb-16">
-          <div>
-            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">DIRECCIÓN</h4>
-            <p>Calle Paseo de los Locutores<br />Sector Piantini, SD</p>
-          </div>
-          <div>
-            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">HORARIO</h4>
-            <p>Domingo - Miercoles 12 PM - 12 AM<br />Jueves - Sabado 12 PM - 1 AM </p>
-          </div>
-          <div>
-            <h4 className="font-subtitle text-[10px] tracking-widest uppercase text-primary mb-4">RESERVACIONES</h4>
-            <p>+18293424146<br />CasaLuca@gmail.com</p>
-          </div>
-        </div>
-        <p className="text-[10px] font-subtitle tracking-[0.4em] opacity-40 uppercase">© 2025 CASA LUCA FINE DINING GROUP</p>
-      </footer>
-    </main>
-  );
-}
+    <footer className="py-16 md:py-24 border-t border-primary/10 bg-background">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
+
+    <h2 className="text-4xl md:text-5xl font-headline text-primary tracking-[0.12em]">
+      CASA LUCA
+    </h2>
+
+    <p className="text-[10px] md:text-xs font-subtitle tracking-[0.35em] uppercase text-primary/60 mt-4">
+      Fine Dining · Santo Domingo
+    </p>
+
+    <div className="gold-divider max-w-md mx-auto mt-8 mb-12" />
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 text-center">
+      <div className="space-y-3">
+        <h3 className="text-[10px] md:text-xs font-subtitle tracking-[0.35em] uppercase text-primary">
+          Dirección
+        </h3>
+        <p className="text-base md:text-lg text-muted italic leading-relaxed">
+          Calle Paseo de los Locutores
+          <br />
+          Sector Piantini, Santo Domingo
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        <h3 className="text-[10px] md:text-xs font-subtitle tracking-[0.35em] uppercase text-primary">
+          Horario
+        </h3>
+        <p className="text-base md:text-lg text-muted italic leading-relaxed">
+          Domingo - Miércoles 12 PM - 12 AM
+          <br />
+          Jueves - Sábado 12 PM - 1 AM
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        <h3 className="text-[10px] md:text-xs font-subtitle tracking-[0.35em] uppercase text-primary">
+          Reservas
+        </h3>
+        <p className="text-base md:text-lg text-muted italic leading-relaxed">
+          +1 829 342 4146
+          <br />
+          CasaLuca@gmail.com
+        </p>
+
+        <a
+          href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block mt-4 border border-primary/40 px-6 py-3 text-[10px] md:text-xs font-subtitle tracking-[0.25em] uppercase text-primary hover:bg-primary hover:text-background transition-all"
+        >
+          Reservar por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div className="mt-14 md:mt-16 pt-6 border-t border-primary/10">
+      <p className="text-[10px] md:text-xs font-subtitle tracking-[0.3em] uppercase text-primary/40">
+        © 2025 Casa Luca Fine Dining Group
+      </p>
+    </div>
+  </div>
+</footer>
