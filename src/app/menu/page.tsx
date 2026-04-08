@@ -205,35 +205,35 @@ export default function MenuPage() {
                       </span>
                     </div>
 
-                    <div className="flex-1 min-w-0 pt-1">
-                      <h2 className="text-[22px] sm:text-[30px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
-                        {section.title}
-                      </h2>
+                  <div className="flex-1 min-w-0 pt-1 pr-3 sm:pr-4 md:pr-6">
+  <h2 className="text-[22px] sm:text-[30px] md:text-4xl font-serif text-[#E8E0D0] mb-4 sm:mb-5 md:mb-8 leading-none sm:leading-tight">
+    {section.title}
+  </h2>
 
-                      <div className="space-y-3 sm:space-y-4 md:space-y-5">
-                        {section.items.map((item, i) => (
-                          <div key={i}>
-                            <div className="flex items-baseline gap-2 sm:gap-3">
-                              <h3 className="text-[11px] sm:text-[15px] md:text-lg font-semibold text-white leading-snug min-w-0">
-                                {item.name}
-                              </h3>
+  <div className="space-y-3 sm:space-y-4 md:space-y-5">
+    {section.items.map((item, i) => (
+      <div key={i}>
+        <div className="flex items-baseline gap-3 sm:gap-4">
+          <h3 className="text-[11px] sm:text-[15px] md:text-lg font-semibold text-white leading-snug min-w-0">
+            {item.name}
+          </h3>
 
-                              <div className="flex-1 border-b border-[#C5A059]/30 min-w-[12px] sm:min-w-[20px]" />
+          <div className="flex-1 border-b border-[#C5A059]/30 min-w-[16px] sm:min-w-[28px]" />
 
-                              <span className="text-[#C5A059] text-[11px] sm:text-[15px] md:text-base whitespace-nowrap">
-                                {item.price}
-                              </span>
-                            </div>
+          <span className="text-[#C5A059] text-[11px] sm:text-[15px] md:text-base whitespace-nowrap">
+            {item.price}
+          </span>
+        </div>
 
-                            {item.desc && (
-                              <p className="text-[10px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[95%]">
-                                {item.desc}
-                              </p>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+        {item.desc && (
+          <p className="text-[10px] sm:text-[12px] md:text-sm text-[#C9C9C9] mt-1.5 sm:mt-2 italic leading-relaxed max-w-[95%]">
+            {item.desc}
+          </p>
+        )}
+      </div>
+    ))}
+  </div>
+</div>
                   </div>
                 </div>
               </div>
