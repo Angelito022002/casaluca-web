@@ -129,9 +129,9 @@ const featuredSections = [
     reversed: false,
   },
   {
-    title: "PLATOS FUERTES",
+    title: "CARNES",
     image: "https://i.imgur.com/xeojJPQ.jpeg",
-    sideTitle: "PLATOS FUERTES",
+    sideTitle: "CARNES",
     items: MENU_SECTIONS[7].items.slice(0, 4),
     reversed: true,
   },
@@ -163,6 +163,8 @@ export default function MenuPage() {
           <p className="text-[#BDBDBD] mt-5 text-sm md:text-base max-w-2xl mx-auto italic">
             Sabores diseñados para una experiencia única
           </p>
+
+          <div className="w-20 h-px bg-[#C5A059]/40 mx-auto mt-6" />
         </div>
 
         {/* BLOQUES EDITORIALES */}
@@ -172,12 +174,8 @@ export default function MenuPage() {
               key={index}
               className="bg-[#103128] border border-[#C5A059]/15 p-5 md:p-8"
             >
-              <div
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${
-                  section.reversed ? "lg:[direction:rtl]" : ""
-                }`}
-              >
-                <div className="lg:col-span-5">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className={`lg:col-span-5 ${section.reversed ? "lg:order-2" : "lg:order-1"}`}>
                   <div className="relative overflow-hidden rounded-t-[120px] border border-[#C5A059]/20 h-[320px] md:h-[420px]">
                     <img
                       src={section.image}
@@ -187,7 +185,7 @@ export default function MenuPage() {
                   </div>
                 </div>
 
-                <div className="lg:col-span-7 lg:[direction:ltr]">
+                <div className={`lg:col-span-7 ${section.reversed ? "lg:order-1" : "lg:order-2"}`}>
                   <div className="flex items-start gap-4 md:gap-8">
                     <div className="hidden md:flex items-center justify-center min-w-[70px]">
                       <span className="text-[#C5A059] text-5xl lg:text-6xl font-serif [writing-mode:vertical-rl] rotate-180 tracking-wide opacity-90">
@@ -230,11 +228,11 @@ export default function MenuPage() {
         </div>
 
         {/* MENÚ COMPLETO */}
-        <div className="space-y-10 md:space-y-12">
+        <div className="space-y-8 md:space-y-10">
           {MENU_SECTIONS.map((section, index) => (
             <section
               key={index}
-              className="border border-[#C5A059]/20 bg-[#0F261E] p-5 sm:p-6 md:p-10 rounded-t-[50px] md:rounded-t-[80px]"
+              className="border border-[#C5A059]/20 bg-[#0F261E] p-5 sm:p-6 md:p-8 rounded-t-[40px] md:rounded-t-[70px]"
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-[#C5A059] mb-8 tracking-wide">
                 {section.title}
