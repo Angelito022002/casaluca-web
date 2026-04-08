@@ -108,9 +108,9 @@ export default function Home() {
           Horario
         </h3>
         <p className="text-base md:text-lg text-muted italic leading-relaxed">
-          Domingo - Miércoles 12 PM - 12 AM
+          Domingo - Miércoles 12PM - 12AM
           <br />
-          Jueves - Sábado 12 PM - 1 AM
+          Jueves - Sábado 12PM - 1AM
         </p>
       </div>
 
