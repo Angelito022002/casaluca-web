@@ -33,6 +33,7 @@ const MENU_SECTIONS = [
       { name: "Tiramisú de churros", price: "RD$550" },
     ],
   },
+  // ... Puedes seguir añadiendo el resto de secciones aquí
 ];
 
 const featuredSections = [
@@ -46,7 +47,7 @@ const featuredSections = [
   },
   {
     title: "Main Dishes",
-    displayTitle: "Carnes",
+    displayTitle: "Platos Fuertes",
     image: "https://i.imgur.com/xeojJPQ.jpeg",
     sideTitle: "MAIN DISH",
     items: MENU_SECTIONS[1].items.slice(0, 4),
@@ -64,61 +65,53 @@ const featuredSections = [
 
 export default function MenuPage() {
   return (
-    <main className="min-h-screen bg-[#08100e] text-white py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="text-center mb-14 md:mb-16">
-          <Link
-            href="/"
-            className="text-[10px] md:text-xs text-[#C5A059] uppercase tracking-[0.4em] hover:opacity-80 transition"
-          >
+    <main className="min-h-screen bg-[#08100e] text-white py-12">
+      <div className="max-w-6xl mx-auto px-4">
+        
+        {/* Header simple */}
+        <div className="text-center mb-16">
+          <Link href="/" className="text-[10px] text-[#C5A059] uppercase tracking-[0.4em] hover:opacity-80 transition">
             Volver al inicio
           </Link>
-
-          <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-[#C5A059] mt-4 opacity-90">
-            MENÚ
-          </h1>
-
-          <p className="text-[#BDBDBD] mt-4 text-sm md:text-base italic max-w-xl mx-auto">
-            Sabores diseñados para una experiencia única
-          </p>
+          <h1 className="text-6xl md:text-8xl font-serif text-[#C5A059] mt-4 opacity-90">MENÚ</h1>
         </div>
 
-        <div className="space-y-10 md:space-y-12">
+        {/* SECCIONES ESTILO EDITORIAL */}
+        <div className="space-y-10">
           {featuredSections.map((section, index) => (
             <section
               key={index}
-              className={`relative flex flex-col lg:flex-row items-center bg-[#132520] overflow-hidden min-h-[450px] border border-[#C5A059]/15 ${
+              className={`relative flex flex-col lg:flex-row items-center bg-[#1a2b27] overflow-hidden min-h-[450px] shadow-2xl ${
                 section.reversed ? "lg:flex-row-reverse" : ""
               }`}
             >
-              <div
-                className={`absolute hidden lg:block pointer-events-none select-none ${
-                  section.reversed ? "left-4" : "right-4"
-                }`}
-              >
-                <span className="text-[#d4b483] text-[88px] font-serif opacity-[0.12] tracking-[16px] [writing-mode:vertical-rl] uppercase">
+              {/* Texto Vertical de fondo (Marca de agua lateral) */}
+              <div className={`absolute hidden lg:block pointer-events-none select-none ${
+                section.reversed ? "left-4" : "right-4"
+              }`}>
+                <span className="text-[#d4b483] text-[90px] font-serif opacity-[0.08] tracking-[20px] [writing-mode:vertical-rl] uppercase">
                   {section.sideTitle}
                 </span>
               </div>
 
-              <div className="flex-1 p-8 md:p-12 z-10 w-full">
-                <h2 className="text-2xl md:text-3xl font-serif text-[#E8E0D0] mb-8 flex items-center gap-2 italic">
+              {/* Contenido de Texto */}
+              <div className="flex-1 p-8 md:p-14 z-10 w-full">
+                <h2 className="text-2xl md:text-3xl font-serif text-[#e0e0e0] mb-10 flex items-center gap-2 italic">
                   <span className="text-[#C5A059] not-italic">✦</span> {section.displayTitle}
                 </h2>
 
-                <div className="space-y-7">
+                <div className="space-y-8">
                   {section.items.map((item, i) => (
                     <div key={i} className="group">
-                      <div className="flex items-baseline gap-3">
-                        <h3 className="text-xs md:text-sm font-bold text-white uppercase tracking-widest">
+                      <div className="flex items-baseline gap-4">
+                        <h3 className="text-xs md:text-sm font-bold text-white uppercase tracking-widest whitespace-nowrap">
                           {item.name}
                         </h3>
-                        <div className="flex-1 border-b border-[#d4b483]/20 mb-1" />
-                        <span className="text-[#d4b483] text-sm font-bold">
+                        <div className="flex-1 border-b border-[#d4b483]/20 mb-1"></div>
+                        <span className="text-[#d4b483] text-sm font-bold font-mono">
                           {item.price}
                         </span>
                       </div>
-
                       {item.desc && (
                         <p className="text-[11px] md:text-xs text-gray-400 mt-2 max-w-[85%] leading-relaxed">
                           {item.desc}
@@ -129,14 +122,15 @@ export default function MenuPage() {
                 </div>
               </div>
 
-              <div className="flex-1 flex justify-center items-center p-8 md:p-12 z-10">
+              {/* Imagen con forma de ARCO */}
+              <div className="flex-1 flex justify-center items-center p-10 md:p-14 z-10">
                 <div className="relative group">
-                  <div className="absolute -inset-2 border border-[#d4b483]/30 rounded-t-full translate-y-2 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-500" />
-                  <div className="w-[250px] h-[340px] sm:w-[280px] sm:h-[380px] md:w-[300px] md:h-[400px] overflow-hidden rounded-t-full border-2 border-[#d4b483]">
+                  <div className="absolute -inset-2 border border-[#d4b483]/30 rounded-t-full translate-y-2 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-500"></div>
+                  <div className="w-[260px] h-[360px] md:w-[300px] md:h-[400px] overflow-hidden rounded-t-full border-2 border-[#d4b483]">
                     <img
                       src={section.image}
                       alt={section.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                      className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
                     />
                   </div>
                 </div>
@@ -145,19 +139,14 @@ export default function MenuPage() {
           ))}
         </div>
 
-        <div className="text-center mt-16 md:mt-20 pb-8">
+        {/* Footer de Reserva */}
+        <div className="text-center mt-20 pb-10">
           <a
-            href="https://wa.me/18293424146?text=Hola,%20quiero%20reservar%20en%20Casa%20Luca"
-            target="_blank"
-            rel="noreferrer"
+            href="https://wa.me/18293424146"
             className="inline-block border border-[#C5A059] text-[#C5A059] px-10 py-4 text-xs uppercase tracking-[0.3em] hover:bg-[#C5A059] hover:text-black transition-all duration-300"
           >
-            Reservar mesa
+            Reservar Mesa
           </a>
-
-          <p className="text-[#BDBDBD] text-sm italic mt-4">
-            Experiencia exclusiva · Reservas limitadas
-          </p>
         </div>
       </div>
     </main>
