@@ -176,7 +176,7 @@ export default function MenuPage() {
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className={`lg:col-span-5 ${section.reversed ? "lg:order-2" : "lg:order-1"}`}>
-                  <div className="relative overflow-hidden rounded-t-[120px] border border-[#C5A059]/20 h-[320px] md:h-[420px]">
+                 <div className="relative overflow-hidden rounded-t-[120px] border border-[#C5A059]/20 h-[260px] sm:h-[300px] md:h-[420px] mx-auto max-w-[320px] md:max-w-full">
                     <img
                       src={section.image}
                       alt={section.title}
@@ -186,7 +186,7 @@ export default function MenuPage() {
                 </div>
 
                 <div className={`lg:col-span-7 ${section.reversed ? "lg:order-1" : "lg:order-2"}`}>
-                  <div className="flex items-start gap-4 md:gap-8">
+                  <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
                     <div className="hidden md:flex items-center justify-center min-w-[70px]">
                       <span className="text-[#C5A059] text-5xl lg:text-6xl font-serif [writing-mode:vertical-rl] rotate-180 tracking-wide opacity-90">
                         {section.sideTitle}
@@ -194,7 +194,7 @@ export default function MenuPage() {
                     </div>
 
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-serif text-[#E8E0D0] mb-8">
+                     <h2 className="text-3xl sm:text-4xl md:text-4xl font-serif text-[#E8E0D0] mb-6 md:mb-8 text-center md:text-left">
                         {section.title}
                       </h2>
 
