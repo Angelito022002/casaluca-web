@@ -87,6 +87,9 @@ Teléfono: ${phone}`;
             </button>
           </div>
         </div>
+        <p className="text-sm text-muted italic mt-4">
+  Recibirás confirmación de tu reserva por WhatsApp.
+</p>
       </div>
     </section>
   );
